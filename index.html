@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="view" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        div{
+            margin-bottom: 2px;
+        }
+
+        h1 {
+            text-align: center;
+        }   
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 1px;
+            font-weight: bold;
+        }
+
+        th, tr {
+            border: 1px solid #e0e0e0;
+            padding: 8px;
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: #9e9e9e;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>Ficha de Personagem</h1>
+
+    <form id="charForm">
+        <div>
+            <label for="nome">Nome do Personagem:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div>
+            <label for="classe">Classe:</label>
+            <input type="text" id="classe" name="classe" required>
+        </div>
+
+        <div>
+            <label for="raca">Raça:</label>
+            <input type="text" id="raca" name="raca" required>
+        </div>
+
+        <div>
+            <label for="nivel">Nível:</label>
+            <input type="number" id="nivel" name="nivel" min="1" required>
+        </div>
+
+        <div>
+            <label for="forca">Força:</label>
+            <input type="number" id="for" name="for" min="1" max="20" required>
+        </div>
+
+        <div>
+            <label for="destreza">Destreza:</label>
+            <input type="number" id="des" name="des" min="1" max="20" required>
+        </div>
+
+        <div>
+            <label for="constituicao">Constituição:</label>
+            <input type="number" id="con" name="con" min="1" max="20" required>
+        </div>
+
+        <div>
+            <label for="inteligencia">Inteligência:</label>
+            <input type="number" id="int" name="int" min="1" max="20" required>
+        </div>
+
+        <div>
+            <label for="sabedoria">Sabedoria:</label>
+            <input type="number" id="sab" name="sab" min="1" max="20" required>
+        </div>
+
+        <div>
+            <label for="carisma">Carisma:</label>
+            <input type="number" id="car" name="car" min="1" max="20" required>
+        </div>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <h1>Personagens Criados</h1>
+
+    <div>
+    <table id="tabelaForm">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Classe</th>
+                <th>Raça</th>
+                <th>Nível</th>
+                <th>Força</th>
+                <th>Destreza</th>
+                <th>Constituição</th>
+                <th>Inteligência</th>
+                <th>Sabedoria</th>
+                <th>Carisma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!------------------------->
+        </tbody>
+    </table>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
